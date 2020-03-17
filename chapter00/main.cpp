@@ -13,21 +13,30 @@
 //}
 
 #include <iostream>
-
-int
-main
-(
-
-        )
-{
-    std
-    ::
-    cout
-    <<
-    "Hello, World"
-    <<
-    std
-    ::
-    endl
-    ;
+int main(){
+    std::cout << "Start the following line with tabs" << std::endl;
+    std::cout << "\tStart this line with 1 tab." << std::endl;
+    std::cout << "\t\tStart this line with 2 tabs." << std::endl;
+    std::cout << "\t\t\tStart this line with 3 tabs." << std::endl;
+    return 0;
 }
+
+//#include <iostream>
+//
+//int
+//main
+//(
+//
+//        )
+//{
+//    std
+//    ::
+//    cout
+//    <<
+//    "Hello, World"
+//    <<
+//    std
+//    ::
+//    endl
+//    ;
+//}

@@ -13,11 +13,11 @@ OK, let's get start.
   - [x] Finish the exercises
   - [ ] Improve study notes
 
-- [ ] chapter01
+- [x] chapter01
 
    - [x] Learn the basics
 
-    - [ ] Finish the exercises
+    - [x] Finish the exercises
     - [x] Improve study notes
 
 - [ ] chapter02

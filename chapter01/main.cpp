@@ -41,6 +41,38 @@ int main() {
      * buffer and write it into the variable which named
      * message. So, throughout the whole process we didn't
      * change the value of either hello or message*/
-    const std::string exclam = "!";
-    const std::string message = "hello" + ", world" + exclam;
+//    const std::string exclam = "!";
+//    const std::string message = "hello" + ", world" + exclam;
+//    {
+//        const std::string s = "a string";
+//        std::cout << s << std::endl;
+//    }
+//    {
+//        const std::string s = "another string";
+//        std::cout << s << std::endl;
+//    }
+//    return 0;
+//    {
+//        const std::string s = "a string";
+//        std::cout << s << std::endl;
+//        {
+//            const std::string s = "another string";
+//            std::cout << s << std::endl;
+//        }
+//    }
+//    {
+//        std::string s = "a string";
+//        {
+//            std::string x = s + ", really";
+//            std::cout << s << std::endl;
+//            std::cout << x << std::endl;
+//        }
+//    }
+    std::cout<<"What is Your name? ";
+    std::string name;
+    std::cin>>name;
+    std::cout<<"Hello, "<<name<<std::endl<<"And what is yours? ";
+    std::cin>>name;
+    std::cout<<"Hello, "<<name<<";nice to meet you too!"<<std::endl;
+    return 0;
 }

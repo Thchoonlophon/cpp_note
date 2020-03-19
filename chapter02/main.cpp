@@ -11,19 +11,37 @@ int main() {
     const std::string::size_type cols = greeting.size() + pad * 2 + 2;
     std::cout << std::endl;
     int r = 0;
+    // these are my answer,but it's too low.
+//    while (r != rows) {
+//        int c = 0;
+//        while (c != cols) {
+//            if (r == 0 || r == rows - 1 || c == 0 || c == cols - 1) {
+//                std::cout << "*";
+//            } else if (r == 1 || r == rows - 2) {
+//                std::cout << " ";
+//            } else {
+//                if (c == 1) {
+//                    std::cout << " " + greeting + " ";
+//                } else if (c == cols - 1) {
+//                    std::cout << "*";
+//                }
+//            }
+//            ++c;
+//        }
+//        ++r;
+//        std::cout << std::endl;
+//    }
     while (r != rows) {
         int c = 0;
         while (c != cols) {
-
             if (r == 0 || r == rows - 1 || c == 0 || c == cols - 1) {
                 std::cout << "*";
-            } else if (r == 1 || r == rows - 2) {
-                std::cout << " ";
             } else {
-                if (c == 1) {
-                    std::cout << " " + greeting + " ";
-                } else if (c == cols - 1) {
-                    std::cout << "*";
+                if (r == pad + 1 && c == pad + 1) {
+                    std::cout << greeting;
+                    c += greeting.size() - 1;
+                } else {
+                    std::cout << " ";
                 }
             }
             ++c;

@@ -8,6 +8,7 @@ int main() {
     const std::string greeting = "Hello, " + name + " !";
     const int pad = 1;
     const int rows = pad * 2 + 3;
+    const std::string::size_type cols = greeting.size() + pad * 2 + 2;
     std::cout << std::endl;
     int r = 0;
     while (r != rows) {

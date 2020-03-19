@@ -17,10 +17,14 @@ int main() {
 
             if (r == 0 || r == rows - 1 || c == 0 || c == cols - 1) {
                 std::cout << "*";
-            } else if (r == 2 || r == rows - 2) {
+            } else if (r == 1 || r == rows - 2) {
                 std::cout << " ";
             } else {
-//                std::cout << (cols - 2 - greeting.size()) / 2 << std::endl;
+                if (c == 1) {
+                    std::cout << " " + greeting + " ";
+                } else if (c == cols - 1) {
+                    std::cout << "*";
+                }
             }
             ++c;
         }

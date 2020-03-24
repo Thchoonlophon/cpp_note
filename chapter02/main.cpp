@@ -81,7 +81,7 @@
 #include <string>
 
 using std::cout;    using std::endl;
-using std::string;
+using std::string;  using std::cin;
 
 int main() {
     /*
@@ -208,6 +208,26 @@ int main() {
         }
         cout << endl;
     }
+    int i = 0;
+    while (i < 10) {
+        i += 1;
+        cout << i << endl;
+    }
+    for (int i = 10; i != -5 - 1; i--) {
+        cout << i << endl;
+    }
+    int res = 1;
+    for (int i = 1; i != 10; i++) {
+        res *= i;
+    }
+    cout << res;
      */
-    
+    int num1, num2;
+    cout << "Please input num1:";
+    cin >> num1;
+    cout << "Please input num2:";
+    cin >> num2;
+    string res = num1 > num2 ? "num1 is larger than num2" : num1 < num2 ? "num2 is larger than num1"
+                                                                        : "num1 is equal to num2";
+    cout << res << endl;
 }

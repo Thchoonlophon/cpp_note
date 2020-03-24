@@ -80,8 +80,8 @@
 #include <iostream>
 #include <string>
 
-using std::cin;     using std::cout;
-using std::endl;    using std::string;
+using std::cout;    using std::endl;
+using std::string;
 
 int main() {
     /*
@@ -133,7 +133,6 @@ int main() {
         }
         cout << endl;
     }
-     */
     string name;
     int brow, snum, rows;
     cout << "Please input your name:";
@@ -171,4 +170,44 @@ int main() {
         }
         cout << endl;
     }
+    int side = 9;
+    int mid_line = side / 2 + 1;
+    int max_num = mid_line * 2 - 1;
+    for (int i = 0; i != side; ++i) {
+        int spaces = i <= 5 ? (mid_line - (i + 1)) : (i + 1 - mid_line);
+        int count_x = 0;
+        for (int j = 0; j != max_num; j++) {
+            if (j >= spaces && (j + 1 - spaces) % 2 == 1 &&
+                count_x < (max_num - spaces * 2 + 1) / 2) {
+                cout << "*";
+                ++count_x;
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+    for (int i = 0; i != side; ++i) {
+        for (int j = 0; j != side; ++j) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    max_num = side * 2 - 1;
+    for (int i = 0; i != side; ++i) {
+        int spaces = side - (i + 1);
+        int count_x = 0;
+        for (int j = 0; j != max_num; ++j) {
+            if (j >= spaces && (j + 1 - spaces) % 2 == 1 &&
+                count_x < (max_num - spaces * 2 + 1) / 2) {
+                cout << "*";
+                ++count_x;
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+     */
+    
 }

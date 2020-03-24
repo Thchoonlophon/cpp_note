@@ -181,8 +181,8 @@ int main(){
 #include <iostream>
 #include <string>
 
-using std::cin;     using std::cout;
-using std::endl;    using std::string;
+using std::cout;	using std::endl;    
+using std::string;
 
 int main(){
     int side = 9;
@@ -225,4 +225,96 @@ int main(){
     }
 }
 ```
+
+## What does the following code do? 
+
+```C++
+int i = 0;
+while (i < 10) {
+i += 1;
+std::cout << i << std::endl;
+}
+```
+
+Through all the code ,maybe we can guess that the program gonna output the number from 1 to 10, and print each number in a new line. like that.
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+## Write a program to count down from 10 to -5 
+
+```c++
+#include <iostream>
+
+using std::cout;	using std::endl;
+
+int main(){
+    for (int i = 10; i != -5 - 1; i--) {
+        cout << i << endl;
+    }
+}
+```
+
+## Write a program to generate the product of the numbers in the range [1, 10) 
+
+```c++
+#include <iostream>
+
+using std::cout;	using std::endl;
+
+int main(){
+    int res = 1;
+    for (int i = 1; i != 10; i++) {
+        res *= i;
+    }
+    cout << res << endl;
+}
+```
+
+## Write a program that asks the user to enter two numbers and tells the user which number is larger than the other. 
+
+```c++
+#include <iostream>
+
+using std::cout;	using std::endl;
+
+int main(){
+    int num1, num2;
+    cout << "Please input num1:";
+    cin >> num1;
+    cout << "Please input num2:";
+    cin >> num2;
+    string res = num1 > num2 ? "num1 is larger than num2" : 
+    			 num1 < num2 ? "num2 is larger than num1" : 
+    						   "num1 is equal to num2";
+    cout << res << endl;
+}
+```
+
+## Explain each of the uses of std:: in the following program: 
+
+```c++
+int main() {
+	int k = 0;
+	while (k != n) { // invariant: we have written k asterisks so far
+		using std::cout;
+		cout << "*";
+		++k;
+	}
+	std::cout << std::endl; // std:: is required here
+	return 0;
+}
+```
+
+
 

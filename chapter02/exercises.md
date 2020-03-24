@@ -316,5 +316,9 @@ int main() {
 }
 ```
 
+Within the while loop, we have using **std::cout** statement to declare that the name **cout** (residing in namespace **std**) is made available to the program. i.e. within the while loop scope whenever we have **cout**, the program “knows” that we are referring to **std::cout** – the **cout** of namespace **std**. The usage of **std::cout** statement has the life span of only within the while loop scope, as defined by the two curly braces **{ }**. The while loop uses the **std::cout** to write asterisks on the console window.
 
+Immediately after the while loop scope, we have **std::cout** – i.e. we need to explicitly specify that we are referring to the **cout** of the namespace **std** (and not other namespaces). **std::cout** is used here to write to the console window.
+
+Lastly, we have the **std::endl**. Again, we need to explicitly specify that we are referring to the **endl** of the namespace **std** (and not other namespaces). **std::endl** is used for ending the currently line (and start a new line).
 

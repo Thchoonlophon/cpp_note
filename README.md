@@ -22,12 +22,12 @@ OK, let's get start.
     - [x] Finish the exercises
     - [x] Improve study notes
 
-- [ ] chapter02
+- [x] chapter02
 
-   - [ ] Learn the basics
+   - [x] Learn the basics
 
-    - [ ] Finish the exercises
-    - [ ] Improve study notes
+    - [x] Finish the exercises
+    - [x] Improve study notes
 
 - [ ] chapter03
 

@@ -22,5 +22,20 @@ cout << setprecision(/* the number as you want */)
      << setprecision(prec) << endl;
 ```
 
+And we can also do like this:
 
+```c++
+#include <iostream>
+#include <ios>
+#include <iomanip>
+
+using std::cout;		using std::setprecision;
+using std::endl;		using std::streamsize;
+
+streamsize prec = cout.precision(/* the number as you want to set */);
+cout << /* the number what you want to output */ << endl;
+cout.precision(prec);
+```
+
+Both of all above two ways can get a right result, but we prefer the first one. Because by doing so, we can minimize the part of the program in which the precision is set to an unusual value. 
 

@@ -23,9 +23,13 @@ int main() {
         ++count;
         sum += x;
     }
-    streamsize prec = cout.precision();
-    cout << "Your final grade is " << setprecision(3)
-         << midterm * 0.2 + final * 0.4 + sum / count * 0.4
-         << setprecision(prec) << endl;
+//    streamsize prec = cout.precision();
+//    cout << "Your final grade is " << setprecision(3)
+//         << midterm * 0.2 + final * 0.4 + sum / count * 0.4
+//         << setprecision(prec) << endl;
+    streamsize prec = cout.precision(3);
+    cout << prec << endl;
+    cout << "Your final grade is " << midterm * 0.2 + final * 0.4 + sum / count * 0.4 << endl;
+    cout.precision(prec);
     return 0;
 }

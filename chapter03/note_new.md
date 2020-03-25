@@ -16,10 +16,12 @@ We can call the method of **`cout`** which named **`precision`** to get the prec
 using std::cout;		using std::setprecision;
 using std::endl;		using std::streamsize;
 
-streamsize prec = cout.precision();
-cout << setprecision(/* the number as you want */) 
-     << /* the number what you want to output */
-     << setprecision(prec) << endl;
+int main() {
+    streamsize prec = cout.precision();
+    cout << setprecision(/* the number as you want */) 
+         << /* the number what you want to output */
+         << setprecision(prec) << endl;
+}
 ```
 
 And we can also do like this:
@@ -32,10 +34,32 @@ And we can also do like this:
 using std::cout;		using std::setprecision;
 using std::endl;		using std::streamsize;
 
-streamsize prec = cout.precision(/* the number as you want to set */);
-cout << /* the number what you want to output */ << endl;
-cout.precision(prec);
+int main() {
+	streamsize prec = cout.precision(/* the number as you want to set */);
+    cout << /* the number what you want to output */ << endl;
+    cout.precision(prec);    
+}
 ```
 
 Both of all above two ways can get a right result, but we prefer the first one. Because by doing so, we can minimize the part of the program in which the precision is set to an unusual value. 
 
+## About input
+
+In this program we can see one part of the whole code is seems like that.
+
+```c++
+#include <iostream>
+
+using std::cin;
+
+int main() {
+    double x;
+    while (cin >> x) {
+        /* the cood blocks */
+    }
+}
+```
+
+So what's that  supposed to mean? The effect of this statement is to attempt to read from `cin`. If the read succeeds, `x` will hold the value that we just read, and the `while` test also succeeds. If the read fails (either because we have run out of input or because we encountered input that was invalid for the type of x), then the `while` test fails, and we should not rely on the value of `x` 
+
+ 

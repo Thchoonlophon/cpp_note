@@ -60,6 +60,15 @@ int main() {
 }
 ```
 
-So what's that  supposed to mean? The effect of this statement is to attempt to read from `cin`. If the read succeeds, `x` will hold the value that we just read, and the `while` test also succeeds. If the read fails (either because we have run out of input or because we encountered input that was invalid for the type of x), then the `while` test fails, and we should not rely on the value of `x` 
+So what's that  supposed to mean? The effect of this statement is to attempt to read from `cin`. If the read succeeds, `x` will hold the value that we just read, and the `while` test also succeeds. If the read fails (either because we have run out of input or because we encountered input that was invalid for the type of x), then the `while` test fails, and we should not rely on the value of `x` .
 
- 
+And as is known, `>>` operator returns its **`left`** operand ,so we test the program by executing `if (cin >> x) {/* the code blocks */}`. This statement has the same meaning as `cin >> x; if (cin) {/* the code blocks */}`.
+
+## Read data from cin
+
+There are several ways in which trying to read from a stream can be unsuccessful 
+
+- We've gave the program a signal that we are fully completed.
+- We might have encountered input that is incompatible with the type of the variable that we are trying to read .
+- The system might have detected a hardware failure on the input device.
+

@@ -86,3 +86,6 @@ It's a dynamic array, it just like the list in Python. But there are a important
 
 When we include the word typedef as part of a definition, we are saying that we want the name that we define to be a synonym for the given type, rather than a variable of that type 
 
+## sort
+
+Sort is defined in **`<algorithm>`**, and we need pass two arguments  to sort  when we wanna call it.

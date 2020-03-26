@@ -74,5 +74,7 @@ There are several ways in which trying to read from a stream can be unsuccessful
 
 ## How to get median 
 
-
+- Store a number of values that we will read one at a time, without knowing in advance how many values there are
+- Sort the values after we have read them all
+- Get at the middle value(s) efficiently 
 

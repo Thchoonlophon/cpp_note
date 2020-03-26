@@ -78,3 +78,11 @@ There are several ways in which trying to read from a stream can be unsuccessful
 - Sort the values after we have read them all
 - Get at the middle value(s) efficiently 
 
+## vector 
+
+It's a dynamic array, it just like the list in Python. But there are a important difference between vector and list is that the elements in vector can have only one type, but list not.
+
+## typedef
+
+When we include the word typedef as part of a definition, we are saying that we want the name that we define to be a synonym for the given type, rather than a variable of that type 
+

@@ -72,3 +72,5 @@ There are several ways in which trying to read from a stream can be unsuccessful
 - We might have encountered input that is incompatible with the type of the variable that we are trying to read .
 - The system might have detected a hardware failure on the input device.
 
+
+

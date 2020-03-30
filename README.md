@@ -29,11 +29,11 @@ OK, let's get start.
     - [x] Finish the exercises
     - [x] Improve study notes
 
-- [ ] chapter03
+- [x] chapter03
 
-    - [ ] Learn the basics
+    - [x] Learn the basics
     - [ ] Finish the exercises
-    - [ ] Improve study notes
+    - [x] Improve study notes
 
 - [ ] chapter04
 

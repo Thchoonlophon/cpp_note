@@ -44,3 +44,10 @@ ele2[elements >= median]
   - `v.size()` To know how many elements in the vector.
   - `v[i]` To get the element whose index is i.
 - `sort(b, e) ` Rearranges the elements defined by the range [b, e) into nondecreasing order. Defined in `<algorithm>`. 
+- `max(e1, e2)` Returns the larger of the expressions `e1` and `e2`; `e1` and `e2` must have exactly the same type. Defined in `<algorithm>`.
+- `while (cin >> x)` Reads a value of an appropriate type into x and tests the state of the stream. If the stream
+  is in an error state, the test fails; otherwise, the test succeeds, and the body of the while is executed.
+- `s.precision(n)` Sets the precision of stream s to n for future output (or leaves it unchanged if n is omitted). Returns the previous precision.
+- `setprecision(n)` Returns a value that, when written on an output stream s, has the effect of calling `s.precision(n)`. Defined in `<iomanip>`. 
+- `streamsize` The type of the value expected by `setprecision` and returned by precision. Defined in `<ios>`. 
+

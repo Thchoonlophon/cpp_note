@@ -3,7 +3,7 @@
 
 ## Vector
 
-Analogous to the list in Python. We can get every element of every vector by index, and the index of every element must be integer. 
+Analogous to the list in Python. We can get every element of every vector by index, and the index of every element must be integer. And there is one import thing is that we are mustn't use index which is negative number.
 
 If the size of one vector is even, then the vector will assigned to two part. And there is one mid element in each side. just like that picture below.
 
@@ -32,7 +32,4 @@ mid2[mid+1]-->ele2
 idx[size-1]-->
 ele2[elements >= median]
 ```
-
-
-
 

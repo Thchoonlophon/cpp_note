@@ -29,6 +29,7 @@ int main() {
         return 1;
     }
     sort(homework.begin(), homework.end());
+//    cout << homework[-1] << endl;
     vec_sz mid = size / 2;
     double median;
     median = size % 2 == 0 ? (homework[mid - 1] + homework[mid]) / 2 : homework[mid];

@@ -50,4 +50,3 @@ ele2[elements >= median]
 - `s.precision(n)` Sets the precision of stream s to n for future output (or leaves it unchanged if n is omitted). Returns the previous precision.
 - `setprecision(n)` Returns a value that, when written on an output stream s, has the effect of calling `s.precision(n)`. Defined in `<iomanip>`. 
 - `streamsize` The type of the value expected by `setprecision` and returned by precision. Defined in `<ios>`. 
-

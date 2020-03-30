@@ -1,3 +1,4 @@
+/*
 #include <algorithm>
 #include <iomanip>
 #include <ios>  // have no idea with it,the program can work without this include
@@ -43,4 +44,6 @@ int main() {
 //    cout << "Your final grade is " << midterm * 0.2 + final * 0.4 + sum / count * 0.4 << endl;
 //    cout.precision(prec);
 //    return 0;
-}
+}*/
+
+

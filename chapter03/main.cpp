@@ -199,13 +199,25 @@ using std::string;      using std::vector;
 using std::endl;        using std::streamsize;
 using std::sort;        using std::setprecision;
 
-int main(){
-    cout<<"Please input the numbers:";
+int main() {
+    cout << "Please input the numbers:";
     vector<double> array;
     double x;
-    while (cin>>x) array.push_back(x);
-    cout<<endl;
+    while (cin >> x) array.push_back(x);
+    cout << endl;
     typedef vector<double>::size_type vec_sz;
-    
+    vec_sz size = array.size();
+    if (size == 0) {
+        return 1;
+    } else {
+        double q1, q2, q3;
+        vec_sz mid;
+        mid = size / 2;
+        sort(array.begin(), array.end());
+        q2 = size%2==0?(array[mid-1]+array[mid])/2:array[mid];
+        
+//        if (size % 2 == 0) {
+//        }
+    }
 }
 

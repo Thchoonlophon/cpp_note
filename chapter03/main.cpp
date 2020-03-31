@@ -211,13 +211,19 @@ int main() {
         return 1;
     } else {
         double q1, q2, q3;
-        vec_sz mid;
-        mid = size / 2;
+        vec_sz mid = size / 2;
         sort(array.begin(), array.end());
-        q2 = size%2==0?(array[mid-1]+array[mid])/2:array[mid];
-        
-//        if (size % 2 == 0) {
-//        }
+        q2 = size % 2 == 0 ? (array[mid - 1] + array[mid]) / 2 : array[mid];
+        vec_sz mid1 = mid / 2;
+        q1 = mid % 2 == 0 ? (array[mid1 - 1] + array[mid1]) / 2 : array[mid1];
+        q3 = mid % 2 == 0 ?
+             size % 2 == 0 ?
+             (array[mid + mid1 - 1] + array[mid + mid1]) / 2 :
+             array[mid + mid1] :
+             size % 2 == 0 ? array[mid + mid1] : array[mid + 1 + mid1];
+        cout << "Q1: " << q1 << endl
+             << "Q2: " << q2 << endl
+             << "Q3: " << q3 << endl;
     }
 }
 

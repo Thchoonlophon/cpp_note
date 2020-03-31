@@ -188,7 +188,7 @@ int main()
 }
 */
 
-#include <algorithm>
+/*#include <algorithm>
 #include <iostream>
 #include <vector>
 #include <string>
@@ -225,5 +225,5 @@ int main() {
              << "Q2: " << q2 << endl
              << "Q3: " << q3 << endl;
     }
-}
+}*/
 

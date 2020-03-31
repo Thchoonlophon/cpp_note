@@ -22,5 +22,7 @@ I think that all of the Chinese students in middle school or even the  primary s
 
 So we mustn't discard any of the values that we have read if we want to get a right answer.
 
+## Q 3-2
 
+### Write a program to compute and print the quartiles (that is, the quarter of the numbers with the largest values, the next highest quarter, and so on) of a set of integers. 
 

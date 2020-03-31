@@ -188,4 +188,24 @@ int main()
 }
 */
 
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <iomanip>
+
+using std::cin;         using std::cout;
+using std::string;      using std::vector;
+using std::endl;        using std::streamsize;
+using std::sort;        using std::setprecision;
+
+int main(){
+    cout<<"Please input the numbers:";
+    vector<double> array;
+    double x;
+    while (cin>>x) array.push_back(x);
+    cout<<endl;
+    typedef vector<double>::size_type vec_sz;
+    
+}
 

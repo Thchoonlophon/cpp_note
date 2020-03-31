@@ -20,5 +20,7 @@ I think that all of the Chinese students in middle school or even the  primary s
 |     4      |      1,2,3,5       |  2.5   |          False           |
 |     5      |      1,2,3,4       |  2.5   |          False           |
 
+So we mustn't discard any of the values that we have read if we want to get a right answer.
+
 
 

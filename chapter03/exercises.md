@@ -11,3 +11,14 @@
 
 I think that all of the Chinese students in middle school or even the  primary school had studied how to get a median, and we all know that we must get all of the numbers, then to get the median. If we discard any of the values that we have read, let's see what will happen next. 
 
+|  discard   | whole array we get | median |       Observation        |
+| :--------: | :----------------: | :----: | :----------------------: |
+| no discard |     1,2,3,4,5      |   3    |           True           |
+|     1      |      2,3,4,5       |  3.5   |          False           |
+|     2      |      1,3,4,5       |  3.5   |          False           |
+|     3      |      1,2,4,5       |   3    | False and False get True |
+|     4      |      1,2,3,5       |  2.5   |          False           |
+|     5      |      1,2,3,4       |  2.5   |          False           |
+
+
+

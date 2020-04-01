@@ -188,16 +188,15 @@ int main()
 }
 */
 
-/*#include <algorithm>
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <string>
 #include <iomanip>
 
 using std::cin;         using std::cout;
-using std::string;      using std::vector;
+using std::sort;        using std::vector;
 using std::endl;        using std::streamsize;
-using std::sort;        using std::setprecision;
+using std::setprecision;
 
 int main() {
     cout << "Please input the numbers:";
@@ -207,7 +206,8 @@ int main() {
     cout << endl;
     typedef vector<double>::size_type vec_sz;
     vec_sz size = array.size();
-    if (size == 0) {
+    if (size < 4) {
+        cout << "You must input the all values" << endl;
         return 1;
     } else {
         double q1, q2, q3;
@@ -221,9 +221,10 @@ int main() {
              (array[mid + mid1 - 1] + array[mid + mid1]) / 2 :
              array[mid + mid1] :
              size % 2 == 0 ? array[mid + mid1] : array[mid + 1 + mid1];
-        cout << "Q1: " << q1 << endl
-             << "Q2: " << q2 << endl
-             << "Q3: " << q3 << endl;
+        streamsize prec = cout.precision();
+        cout << "Q1: " << setprecision(3) << q1 << endl
+             << "Q2: " << q2 << endl << "Q3: " << q3
+             << setprecision(prec) << endl;
     }
-}*/
+}
 

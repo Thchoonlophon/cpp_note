@@ -264,3 +264,30 @@ int main() {
     cout << count << endl;
 }*/
 
+/*
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+
+using std::cin;     using std::endl;
+using std::cout;    using std::string;
+using std::vector;  using std::sort;
+
+int main() {
+    cout << "please input words:";
+    vector<int> words;
+    string x;
+    while (cin >> x) words.push_back(x.size());
+    cout << endl;
+    typedef vector<int>::size_type vec_sz;
+    vec_sz size = words.size();
+    if (size == 0) {
+        cout << "please input words!" << endl;
+        return 1;
+    }
+    sort(words.begin(), words.end());
+    cout << "the shortest:" << words[0] << endl
+         << "the longest:" << words[size - 1] << endl;
+    return 0;
+}*/

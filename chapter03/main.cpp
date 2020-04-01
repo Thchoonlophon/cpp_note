@@ -248,11 +248,17 @@ int main() {
     sort(words.begin(), words.end());
     typedef vector<string>::size_type vec_sz;
     vec_sz size = words.size();
+    if (size <= 1) {
+        int count = size;
+        cout << count << endl;
+        return 0;
+    }
     int count = 1;
     for (vec_sz i = 1; i != size; i++) {
         if (words[i] != words[i - 1]) {
             ++count;
         }
     }
+
     cout << count << endl;
 }

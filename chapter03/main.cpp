@@ -291,3 +291,46 @@ int main() {
          << "the longest:" << words[size - 1] << endl;
     return 0;
 }*/
+
+/*
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iomanip>
+
+using std::cin;          using std::string;
+using std::cout;         using std::endl;
+using std::vector;       using std::setprecision;
+using std::streamsize;
+
+int main() {
+    cout << "please input the name:";
+    vector<string> name;
+    vector<double> score;
+    typedef vector<string>::size_type vec_sz;
+    string n;
+    double x;
+    double sums;
+    while (cin >> n) {
+        sums = 0;
+        name.push_back(n);
+        cout << "please input 3 grades";
+        for (int i = 0; i != 3; i++) {
+            cin >> x;
+            sums += x;
+        }
+        double grade = sums / 3;
+        score.push_back(grade);
+        cout << "please input another student's name:";
+    }
+    vec_sz size = name.size();
+    streamsize prez = cout.precision();
+    cout << endl;
+    for (int i = 0; i != size; i++) {
+        cout << setprecision(3) << "student's name:" << name[i]
+             << endl << "student's scord:" << score[i]
+             << setprecision(prez) << endl;
+        cout << endl;
+    }
+}*/
+

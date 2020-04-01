@@ -188,6 +188,7 @@ int main()
 }
 */
 
+/*
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -227,4 +228,31 @@ int main() {
              << setprecision(prec) << endl;
     }
 }
+*/
 
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
+
+using std::cin;         using std::string;
+using std::cout;        using std::endl;
+using std::vector;      using std::sort;
+
+int main() {
+    cout << "Please input all words:";
+    vector<string> words;
+    string x;
+    while (cin >> x) words.push_back(x);
+    cout << endl;
+    sort(words.begin(), words.end());
+    typedef vector<string>::size_type vec_sz;
+    vec_sz size = words.size();
+    int count = 1;
+    for (vec_sz i = 1; i != size; i++) {
+        if (words[i] != words[i - 1]) {
+            ++count;
+        }
+    }
+    cout << count << endl;
+}

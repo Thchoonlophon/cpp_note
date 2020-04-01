@@ -80,3 +80,7 @@ int main() {
 }
 ```
 
+## Q 3-3
+
+### Write a program to count how many times each distinct word appears in its input. 
+

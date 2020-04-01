@@ -30,3 +30,7 @@ The question ask us to get quartiles of a array, but what it means? I have no id
 
 I said like that maybe make you at a loss. Let's take a look at the picture below.
 
+![mark](http://lynchow.com/upload_picture/20200401/A8kVVQ4Pg2tC.png?imageslim)
+
+We can see that if a array is seems like that we can get quartiles easily, because they are the median of each part and the whole array. But if not, let's have a look.
+

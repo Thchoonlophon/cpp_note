@@ -34,3 +34,49 @@ I said like that maybe make you at a loss. Let's take a look at the picture belo
 
 We can see that if a array is seems like that we can get quartiles easily, because they are the median of each part and the whole array. But if not, let's have a look.
 
+![mark](http://lynchow.com/upload_picture/20200401/c9l6rfxvTlo9.png?imageslim)
+
+So, let's see the code.
+
+```c++
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <iomanip>
+
+using std::cin;         using std::cout;
+using std::sort;        using std::vector;
+using std::endl;        using std::streamsize;
+using std::setprecision;
+
+int main() {
+    cout << "Please input the numbers:";
+    vector<double> array;
+    double x;
+    while (cin >> x) array.push_back(x);
+    cout << endl;
+    typedef vector<double>::size_type vec_sz;
+    vec_sz size = array.size();
+    if (size < 4) {
+        cout << "You must input the all values" << endl;
+        return 1;
+    } else {
+        double q1, q2, q3;
+        vec_sz mid = size / 2;
+        sort(array.begin(), array.end());
+        q2 = size % 2 == 0 ? (array[mid - 1] + array[mid]) / 2 : array[mid];
+        vec_sz mid1 = mid / 2;
+        q1 = mid % 2 == 0 ? (array[mid1 - 1] + array[mid1]) / 2 : array[mid1];
+        q3 = mid % 2 == 0 ?
+             size % 2 == 0 ?
+             (array[mid + mid1 - 1] + array[mid + mid1]) / 2 :
+             array[mid + mid1] :
+             size % 2 == 0 ? array[mid + mid1] : array[mid + 1 + mid1];
+        streamsize prec = cout.precision();
+        cout << "Q1: " << setprecision(3) << q1 << endl
+             << "Q2: " << q2 << endl << "Q3: " << q3
+             << setprecision(prec) << endl;
+    }
+}
+```
+

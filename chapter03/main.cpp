@@ -188,16 +188,16 @@ int main()
 }
 */
 
-/*#include <algorithm>
+/*
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <string>
 #include <iomanip>
 
 using std::cin;         using std::cout;
-using std::string;      using std::vector;
+using std::sort;        using std::vector;
 using std::endl;        using std::streamsize;
-using std::sort;        using std::setprecision;
+using std::setprecision;
 
 int main() {
     cout << "Please input the numbers:";
@@ -207,7 +207,8 @@ int main() {
     cout << endl;
     typedef vector<double>::size_type vec_sz;
     vec_sz size = array.size();
-    if (size == 0) {
+    if (size < 4) {
+        cout << "You must input the all values" << endl;
         return 1;
     } else {
         double q1, q2, q3;
@@ -221,9 +222,114 @@ int main() {
              (array[mid + mid1 - 1] + array[mid + mid1]) / 2 :
              array[mid + mid1] :
              size % 2 == 0 ? array[mid + mid1] : array[mid + 1 + mid1];
-        cout << "Q1: " << q1 << endl
-             << "Q2: " << q2 << endl
-             << "Q3: " << q3 << endl;
+        streamsize prec = cout.precision();
+        cout << "Q1: " << setprecision(3) << q1 << endl
+             << "Q2: " << q2 << endl << "Q3: " << q3
+             << setprecision(prec) << endl;
     }
+}
+*/
+
+/*
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
+
+using std::cin;         using std::string;
+using std::cout;        using std::endl;
+using std::vector;      using std::sort;
+
+int main() {
+    cout << "Please input all words:";
+    vector<string> words;
+    string x;
+    while (cin >> x) words.push_back(x);
+    cout << endl;
+    sort(words.begin(), words.end());
+    typedef vector<string>::size_type vec_sz;
+    vec_sz size = words.size();
+    if (size <= 1) {
+        int count = size;
+        cout << count << endl;
+        return 0;
+    }
+    int count = 1;
+    for (vec_sz i = 1; i != size; i++) {
+        if (words[i] != words[i - 1]) {
+            ++count;
+        }
+    }
+
+    cout << count << endl;
 }*/
+
+/*
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+
+using std::cin;     using std::endl;
+using std::cout;    using std::string;
+using std::vector;  using std::sort;
+
+int main() {
+    cout << "please input words:";
+    vector<int> words;
+    string x;
+    while (cin >> x) words.push_back(x.size());
+    cout << endl;
+    typedef vector<int>::size_type vec_sz;
+    vec_sz size = words.size();
+    if (size == 0) {
+        cout << "please input words!" << endl;
+        return 1;
+    }
+    sort(words.begin(), words.end());
+    cout << "the shortest:" << words[0] << endl
+         << "the longest:" << words[size - 1] << endl;
+    return 0;
+}*/
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iomanip>
+
+using std::cin;          using std::string;
+using std::cout;         using std::endl;
+using std::vector;       using std::setprecision;
+using std::streamsize;
+
+int main() {
+    cout << "please input the name:";
+    vector<string> name;
+    vector<double> score;
+    typedef vector<string>::size_type vec_sz;
+    string n;
+    double x;
+    double sums;
+    while (cin >> n) {
+        sums = 0;
+        name.push_back(n);
+        cout << "please input 3 grades";
+        for (int i = 0; i != 3; i++) {
+            cin >> x;
+            sums += x;
+        }
+        double grade = sums / 3;
+        score.push_back(grade);
+        cout << "please input another student's name:";
+    }
+    vec_sz size = name.size();
+    streamsize prez = cout.precision();
+    cout << endl;
+    for (int i = 0; i != size; i++) {
+        cout << setprecision(3) << "student's name:" << name[i]
+             << endl << "student's scord:" << score[i]
+             << setprecision(prez) << endl;
+        cout << endl;
+    }
+}
 

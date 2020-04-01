@@ -139,3 +139,8 @@ int main() {
 }
 ```
 
+## Q 3-4
+
+### Write a program to report the length of the longest and shortest string in its input. 
+
+Emmm…… unfortunately, I said the question is easy just now, then they gave me a complex problem,

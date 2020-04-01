@@ -174,3 +174,54 @@ int main() {
 }
 ```
 
+## Q 3-5
+
+### Write a program that will keep track of grades for several students at once. The program could keep two vectors in sync: The first should hold the student's names, and the second the final grades that can be computed as input is read. For now, you should assume a fixed number of homework grades. We'll see in §4.1.3/56 how to handle a variable number of grades intermixed with student names. 
+
+This question is not too difficult.
+
+```c++
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iomanip>
+
+using std::cin;          using std::string;
+using std::cout;         using std::endl;
+using std::vector;       using std::setprecision;
+using std::streamsize;
+
+int main() {
+    cout << "please input the name:";
+    vector<string> name;
+    vector<double> score;
+    typedef vector<string>::size_type vec_sz;
+    string n;
+    double x;
+    double sums;
+    while (cin >> n) {
+        sums = 0;
+        name.push_back(n);
+        cout << "please input 3 grades";
+        for (int i = 0; i != 3; i++) {
+            cin >> x;
+            sums += x;
+        }
+        double grade = sums / 3;
+        score.push_back(grade);
+        cout << "please input another student's name:";
+    }
+    vec_sz size = name.size();
+    streamsize prez = cout.precision();
+    cout << endl;
+    for (int i = 0; i != size; i++) {
+        cout << setprecision(3) << "student's name:" << name[i]
+             << endl << "student's scord:" << score[i]
+             << setprecision(prez) << endl;
+        cout << endl;
+    }
+}
+```
+
+
+

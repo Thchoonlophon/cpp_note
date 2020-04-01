@@ -26,3 +26,7 @@ So we mustn't discard any of the values that we have read if we want to get a ri
 
 ### Write a program to compute and print the quartiles (that is, the quarter of the numbers with the largest values, the next highest quarter, and so on) of a set of integers. 
 
+The question ask us to get quartiles of a array, but what it means? I have no idea with the word which called `quartile`, so I searched it in Google.Then I got it. The quartiles of a array contain `Q1`,`Q2` and `Q3`, these numbers cut the array to four parts, and the each part has the same length. So, we can know that the `Q2` is the median of this array, then we will get two parts which are have the same length, finally, we get the median of each part, the smaller is `Q1`,the other is `Q3`. 
+
+I said like that maybe make you at a loss. Let's take a look at the picture below.
+

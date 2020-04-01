@@ -36,7 +36,17 @@ We can see that if a array is seems like that we can get quartiles easily, becau
 
 ![mark](http://lynchow.com/upload_picture/20200401/c9l6rfxvTlo9.png?imageslim)
 
-So, let's see the code.
+So, let's see the flow and code.
+
+```mermaid
+graph LR
+
+start(start)-->input>Input numbers]
+input --size < 4-->output[Too few]
+input --size >= 4-->sort[Sort the vector]
+sort -->median[Get the medians]
+
+```
 
 ```c++
 #include <algorithm>
@@ -83,4 +93,49 @@ int main() {
 ## Q 3-3
 
 ### Write a program to count how many times each distinct word appears in its input. 
+
+This question is easier than before, we can just sort vector and use for loop, let's take a look.
+
+```mermaid
+graph LR
+start(start)-->input>Input words]
+input--size <= 1-->output[Count]
+input--size > 1-->loop[For loop]
+loop-->output
+```
+
+```c++
+#include <algorithm>
+#include <iostream>
+#include <string>
+#include <vector>
+
+using std::cin;         using std::string;
+using std::cout;        using std::endl;
+using std::vector;      using std::sort;
+
+int main() {
+    cout << "Please input all words:";
+    vector<string> words;
+    string x;
+    while (cin >> x) words.push_back(x);
+    cout << endl;
+    sort(words.begin(), words.end());
+    typedef vector<string>::size_type vec_sz;
+    vec_sz size = words.size();
+    if (size <= 1) {
+        int count = size;
+        cout << count << endl;
+        return 0;
+    }
+    int count = 1;
+    for (vec_sz i = 1; i != size; i++) {
+        if (words[i] != words[i - 1]) {
+            ++count;
+        }
+    }
+    
+    cout << count << endl;
+}
+```
 

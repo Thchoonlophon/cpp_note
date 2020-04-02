@@ -3,11 +3,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stdexcept>
 
 using std::cout;            using std::cin;
 using std::sort;            using std::string;
 using std::setprecision;    using std::vector;
-using std::streamsize;     using std::endl;
+using std::streamsize;      using std::endl;
+using std::domain_error;
 
 double homework(vector<double> hw) {
     sort(hw.begin(), hw.end());
@@ -15,7 +17,7 @@ double homework(vector<double> hw) {
     vec_sz size = hw.size();
     if (size == 0) {
         cout << "you must input all of the homework!" << endl;
-        return 1;
+        throw domain_error("empty vector");
     }
     vec_sz mid = size / 2;
     double median = size % 2 == 0 ? (hw[mid - 1] + hw[mid]) / 2 : hw[mid];
@@ -42,6 +44,6 @@ int main() {
     double home = homework(hw);
     double res = grade(mid, fin, home);
     streamsize prec = cout.precision();
-    cout << "your final grade is " << setprecision(3)
+    cout << name <<", your final grade is " << setprecision(3)
          << res << setprecision(prec) << endl;
 }

@@ -11,7 +11,7 @@ using std::setprecision;    using std::vector;
 using std::streamsize;      using std::endl;
 using std::domain_error;
 
-double homework(vector<double> hw) {
+double homework(const vector<double>& hw) {
     sort(hw.begin(), hw.end());
     typedef vector<double>::size_type vec_sz;
     vec_sz size = hw.size();

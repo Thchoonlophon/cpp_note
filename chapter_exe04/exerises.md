@@ -157,5 +157,10 @@ int main() {
 }
 ```
 
+## 4-4. 
 
+### Question :  Now change your squares program to use double values instead of ints . Use manipulators to manage the output so that the values line up in columns.  
 
+### Answer :
+
+This question I got solved in last question, we can just modify this to finish it.

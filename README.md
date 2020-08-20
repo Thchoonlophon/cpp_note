@@ -35,9 +35,9 @@ OK, let's get start.
     - [x] Finish the exercises
     - [x] Improve study notes
 
-- [ ] chapter04
+- [x] chapter04
 
-    - [ ] Learn the basics
+    - [x] Learn the basics
 
     - [ ] Finish the exercises
 

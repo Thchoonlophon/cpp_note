@@ -32,12 +32,12 @@ OK, let's get start.
 - [x] chapter03
 
     - [x] Learn the basics
-    - [ ] Finish the exercises
+    - [x] Finish the exercises
     - [x] Improve study notes
 
-- [ ] chapter04
+- [x] chapter04
 
-    - [ ] Learn the basics
+    - [x] Learn the basics
 
     - [ ] Finish the exercises
 

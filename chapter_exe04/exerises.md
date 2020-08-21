@@ -93,7 +93,7 @@ cout << setw(3) << i << setw(6) << i * i << endl;
 ···
 ```
 
-## 4-3. 
+## 4-3
 
 ### Question :  What happens if we rewrite the previous program to allow values up to but not including 1000 but neglect to change the arguments to setw ? Rewrite the program to be more robust in the face of changes that allow i to grow without adjusting the setw arguments.  
 
@@ -157,10 +157,15 @@ int main() {
 }
 ```
 
-## 4-4. 
+## 4-4
 
 ### Question :  Now change your squares program to use double values instead of ints . Use manipulators to manage the output so that the values line up in columns.  
 
 ### Answer :
 
 This question I got solved in last question, we can just modify this to finish it.
+
+## 4-5
+
+### Question :  Write a function that reads words from an input stream and stores them in a vector. Use that function both to write programs that count the number of words in the input, and to count how many times each word occurred.  
+

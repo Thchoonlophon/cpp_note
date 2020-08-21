@@ -18,6 +18,7 @@ int main() {
     }
 }*/
 
+/*
 #include "classes/exerise.h"
 #include <iostream>
 #include <iomanip>
@@ -30,9 +31,23 @@ int main() {
     double max_number = 1000;
     maxlen_base = max_length(max_number)[0];
     maxlen_square = max_length(max_number)[1];
-    for (double i = 1; i != 1000; ++i) {
+    for (double i = 1.5; i < 1000; ++i) {
         cout << setw(maxlen_base) << i
              << setw(maxlen_square + 1) << i * i << endl;
     }
     return 0;
+}*/
+
+#include <vector>
+#include <iostream>
+#include <string>
+
+using std::vector;  using std::cin;
+using std::string;  using std::cout;
+
+int main() {
+    vector<string> words;
+    string x;
+    while (cin >> x)
+        words.push_back(x);
 }

@@ -3,4 +3,4 @@ project(chapter05)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(chapter05 source/main.cpp)
+add_executable(chapter05 source/main.cpp source/students.cpp head/students.h)

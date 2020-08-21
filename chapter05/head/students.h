@@ -6,9 +6,16 @@
 #define CHAPTER05_STUDENTS_H
 
 
-class students {
+#include <string>
+#include <vector>
 
+struct Student_info {
+    std::string name;
+    double midterm, final;
+    std::vector<double> homework;
 };
+
+bool fgrade(const Student_info &);
 
 
 #endif //CHAPTER05_STUDENTS_H

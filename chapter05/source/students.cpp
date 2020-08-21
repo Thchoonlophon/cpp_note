@@ -22,7 +22,7 @@ istream &read_hw(istream &in, vector<double> &hw) {
     if (in) {
         hw.clear();
         double x;
-        while (cin>>x)
+        while (cin >> x)
             hw.push_back(x);
         in.clear();
     }
@@ -30,5 +30,7 @@ istream &read_hw(istream &in, vector<double> &hw) {
 }
 
 istream &read(istream &in, Student_info &stu) {
-
+    in >> stu.name >> stu.midterm >> stu.final;
+    read_hw(in, stu.homework);
+    return in;
 }

@@ -27,4 +27,5 @@ using std::max;     using std::vector;
 vector<unsigned int> max_length(double);
 
 
+
 #endif //CHAPTER_EXE04_EXERISE_H

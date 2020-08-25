@@ -6,6 +6,7 @@
 #define CHAPTER05_GET_GRADES_H
 
 #include "students.h"
+#include "../head/median.h"
 
 double grade(const Student_info &);
 

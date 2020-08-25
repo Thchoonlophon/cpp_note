@@ -5,4 +5,8 @@
 #ifndef CHAPTER05_POP_VECTOR_H
 #define CHAPTER05_POP_VECTOR_H
 
+#include "students.h"
+
+std::vector<Student_info> extract_fails(std::vector<Student_info>&);
+
 #endif //CHAPTER05_POP_VECTOR_H

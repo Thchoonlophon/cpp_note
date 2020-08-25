@@ -7,6 +7,6 @@
 
 #include "students.h"
 
-std::vector<Student_info> extract_fails(std::vector<Student_info>& students);
+std::vector<Student_info> extract_fails(std::vector<Student_info>&);
 
 #endif //CHAPTER05_EXTRACT_FAILS_H

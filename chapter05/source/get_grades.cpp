@@ -3,7 +3,6 @@
 //
 
 #include "../head/get_grades.h"
-#include "../head/median.h"
 
 using std::vector;
 

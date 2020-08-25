@@ -3,7 +3,6 @@
 //
 
 #include "../head/get_grades.h"
-#include "../head/median.h"
 
 using std::vector;
 
@@ -14,5 +13,6 @@ double grade(double mid, double final, const vector<double> &hw) {
 }
 
 double grade(const Student_info &s) {
-
+    double out = grade(s.midterm, s.final, s.homework);
+    return out;
 }

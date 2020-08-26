@@ -11,4 +11,6 @@
 
 std::vector<std::string> split(const std::string&);
 
+std::string::size_type width(const std::vector<std::string>&);
+
 #endif //CHAPTER05_2_STRINGS_H

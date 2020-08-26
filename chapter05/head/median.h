@@ -1,3 +1,4 @@
+/*
 //
 // Created by chenjin.qian on 2020/8/21.
 //
@@ -9,7 +10,8 @@
 #include <algorithm>
 #include <vector>
 
-double get_median(const std::vector<double> &);
+//double get_median(const std::vector<double> &);
 
 
 #endif //CHAPTER05_MEDIAN_H
+*/

@@ -1,3 +1,4 @@
+/*
 //
 // Created by chenjin.qian on 2020/8/25.
 //
@@ -30,4 +31,4 @@ list<Student_info> extract_fail(list<Student_info> &students) {
             ++iter;
     }
     return fail;
-}
+}*/

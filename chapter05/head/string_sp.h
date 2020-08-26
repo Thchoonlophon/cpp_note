@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <string>
+#include <cctype>
 
 std::vector<std::string> split(const std::string&);
 

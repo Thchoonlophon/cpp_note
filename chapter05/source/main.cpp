@@ -3,11 +3,11 @@
 //#include "../head/get_grades.h"
 #include "../head/string_sp.h"
 
-using std::vector;     using std::streamsize;
+using std::vector;     //using std::streamsize;
 //using std::setw;       using std::setprecision;
 using std::cin;        using std::cout;
 using std::endl;       using std::max;
-using std::string;     using std::domain_error;
+using std::string;     using std::getline;//using std::domain_error;
 //using std::sort;
 
 int main() {
@@ -30,10 +30,12 @@ int main() {
         }
         cout << endl;
     }*/
-    string a = "   jingxun   ";
-    vector<string> b = split(a);
-    for (vector<string>::size_type i = 0; i != b.size(); ++i) {
-        cout<<b[i];
+    string a;
+    while (getline(cin, a)) {
+        vector<string> b = split(a);
+        for (vector<string>::size_type i = 0; i != b.size(); ++i) {
+            cout << b[i];
+        }
     }
     return 0;
 }

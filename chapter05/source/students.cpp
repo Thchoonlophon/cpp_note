@@ -2,6 +2,7 @@
 // Created by chenjin.qian on 2020/8/21.
 //
 
+/*
 #include "../head/get_grades.h"
 #include <iostream>
 
@@ -34,3 +35,4 @@ istream &read(istream &in, Student_info &stu) {
     read_hw(in, stu.homework);
     return in;
 }
+*/

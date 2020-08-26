@@ -1,3 +1,4 @@
+/*
 //
 // Created by chenjin.qian on 2020/8/21.
 //
@@ -15,4 +16,4 @@ double grade(double mid, double final, const vector<double> &hw) {
 double grade(const Student_info &s) {
     double out = grade(s.midterm, s.final, s.homework);
     return out;
-}
+}*/

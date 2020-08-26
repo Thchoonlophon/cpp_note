@@ -1,3 +1,4 @@
+/*
 //
 // Created by chenjin.qian on 2020/8/25.
 //
@@ -17,4 +18,4 @@ vector<Student_info> extract_fails(vector<Student_info> &students) {
     }
     students = pass;
     return fail;
-}
+}*/

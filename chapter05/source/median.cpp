@@ -1,3 +1,4 @@
+/*
 //
 // Created by chenjin.qian on 2020/8/21.
 //
@@ -14,4 +15,4 @@ double get_median(const vector<double> &hw) {
     sort(hw.begin(), hw.end());
     double out = size % 2 == 0 ? (hw[mid] + hw[mid - 1]) / 2 : hw[mid];
     return out;
-}
+}*/

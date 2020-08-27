@@ -30,9 +30,14 @@ int main() {
     string::size_type maxlen = width(v);
     cout << maxlen << endl;*/
     vector<string> v = {"this is an", "example", "to", "illustrate", "framing"};
-    vector<string> ret = frame(v);
-    for (vector<string>::size_type i = 0; i != ret.size(); ++i) {
-        cout << ret[i] << endl;
-    }
+//    vector<string> ret = frame(v);
+//    for (vector<string>::size_type i = 0; i != ret.size(); ++i) {
+//        cout << ret[i] << endl;
+//    }
+    vector<string> v1 = {"this is not an", "new vector", "to get", "the names"};
+    vector<string> vs = vect(v, v1);
+    vector<string> ret = frame(vs);
+    for (vector<string>::const_iterator i = ret.begin(); i != ret.end(); ++i)
+        cout << *i << endl;
     return 0;
 }

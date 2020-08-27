@@ -5,7 +5,6 @@
 #include "../header/exerises.h"
 
 using std::vector;  using std::string;
-using std::cout;    using std::endl;
 
 vector<string> split(const string &s, const char &flag) {
     vector<string> ret;

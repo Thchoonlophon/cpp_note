@@ -3,4 +3,4 @@ project(chapter05_exe)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(chapter05_exe main.cpp)
+add_executable(chapter05_exe main.cpp header/exerices.h)

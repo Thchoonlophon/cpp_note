@@ -23,7 +23,11 @@ int main() {
         v.push_back(s);
         --t;
     }
-    string::size_type maxlen = width(v);
-    cout << maxlen << endl;
+//    string::size_type maxlen = width(v);
+//    cout << maxlen << endl;
+    vector<string> ret = frame(v);
+    for (vector<string>::size_type i = 0; i != ret.size(); ++i) {
+        cout << ret[i] << endl;
+    }
     return 0;
 }

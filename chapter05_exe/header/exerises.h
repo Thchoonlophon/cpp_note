@@ -8,6 +8,6 @@
 #include <vector>
 #include <string>
 
-std::vector<std::string> split(std::string&, std::string&);
+std::vector<std::string> split(const std::string&, const char &);
 
 #endif //CHAPTER05_EXE_EXERISES_H

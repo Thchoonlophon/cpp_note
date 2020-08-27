@@ -44,3 +44,10 @@ vector<string> frame(const vector<string> &v) {
     ret.push_back(border);
     return ret;
 }
+
+vector<string> vect(const vector<string> &top, const vector<string> &bottom) {
+    vector<string> ret = top;
+    for (vector<string>::const_iterator it = bottom.begin(); it != bottom.end(); ++it)
+        ret.push_back(*it);
+    return ret;
+}

@@ -35,8 +35,9 @@ int main() {
 //        cout << ret[i] << endl;
 //    }
     vector<string> v1 = {"this is not an", "new vector", "to get", "the names"};
-    vector<string> vs = vect(v, v1);
-    vector<string> ret = frame(vs);
+//    vector<string> vs = vect(v, v1);
+    v.insert(v.end(), v1.begin(), v1.end());
+    vector<string> ret = frame(v);
     for (vector<string>::const_iterator i = ret.begin(); i != ret.end(); ++i)
         cout << *i << endl;
     return 0;

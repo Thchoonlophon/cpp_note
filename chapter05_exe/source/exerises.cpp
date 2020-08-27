@@ -22,3 +22,20 @@ vector<string> split(const string &s, const char &flag) {
     ret.push_back(s.substr(j, s.size() + 1));
     return ret;
 }
+
+vector<string> split(const string &s, const string &flag) {
+    vector<string> ret;
+    string x;
+    typedef string::size_type str_size;
+    str_size i = 0, j = 0, size_f = flag.size();
+    while (i != s.size()) {
+        if (flag == s.substr(i, size_f)) {
+            x = s.substr(j, i - j);
+            ret.push_back(x);
+            j = i + size_f;
+        }
+        ++i;
+    }
+    ret.push_back(s.substr(j,s.size()+1));
+    return ret;
+}

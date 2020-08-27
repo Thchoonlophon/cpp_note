@@ -29,7 +29,7 @@ int main() {
     }
     string::size_type maxlen = width(v);
     cout << maxlen << endl;*/
-    vector<string> v=[];
+    vector<string> v = {"this is an", "example", "to", "illustrate", "framing"};
     vector<string> ret = frame(v);
     for (vector<string>::size_type i = 0; i != ret.size(); ++i) {
         cout << ret[i] << endl;

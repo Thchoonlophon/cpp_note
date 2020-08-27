@@ -11,9 +11,7 @@ int main() {
     vector<string> v = split(a, f);
     string out = "[";
     for (vector<string>::size_type i = 0; i != v.size(); ++i) {
-        out += "\"";
-        out += v[i];
-        out += "\"";
+        out += "\"" + v[i] + "\"";
         if (i < v.size() - 1)
             out += ", ";
     }

@@ -14,20 +14,22 @@ int main() {
             cout << v[i];
         }
     }*/
-    string s;
+    /*string s;
     vector<string> v;
-    unsigned int t;
+    int t;
     cin >> t;
     cout << "**************************" << endl;
-    while (getline(cin, s) && t != 0) {
+    cin.clear();
+    while (getline(cin, s) && t >= 0) {
         v.push_back(s);
         --t;
     }
     for (vector<string>::size_type i = 0; i != v.size(); ++i) {
         cout << v[i] << endl;
     }
-//    string::size_type maxlen = width(v);
-//    cout << maxlen << endl;
+    string::size_type maxlen = width(v);
+    cout << maxlen << endl;*/
+    vector<string> v=[];
     vector<string> ret = frame(v);
     for (vector<string>::size_type i = 0; i != ret.size(); ++i) {
         cout << ret[i] << endl;

@@ -10,4 +10,6 @@
 
 std::vector<std::string> split(const std::string&, const char &);
 
+std::vector<std::string> split(const std::string&, const std::string &);
+
 #endif //CHAPTER05_EXE_EXERISES_H

@@ -36,6 +36,22 @@ vector<string> split(const string &s, const string &flag) {
         }
         ++i;
     }
-    ret.push_back(s.substr(j,s.size()+1));
+    ret.push_back(s.substr(j, s.size() + 1));
     return ret;
+}
+
+string replace(const string &s, const string &old, const string &new_) {
+    typedef string::size_type str_size;
+    string x = "";
+    str_size i = 0, j = 0, size_o = old.size();
+    while (i != s.size()) {
+        if (old == s.substr(i, size_o)) {
+            x += s.substr(j, i - j) + new_;
+            j = i + size_o;
+            i += size_o;
+        } else {
+            ++i;
+        }
+    }
+    return x;
 }

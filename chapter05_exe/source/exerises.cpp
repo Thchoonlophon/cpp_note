@@ -2,6 +2,7 @@
 // Created by chenjin.qian on 2020/8/27.
 //
 
+#include <iostream>
 #include "../header/exerises.h"
 
 using std::vector;  using std::string;
@@ -40,19 +41,15 @@ vector<string> split(const string &s, const string &flag) {
     return ret;
 }
 
-string replace(const string &s, const string &old, const string &new_) {
+string replace(string &s, const string &old, const string &new_) {
     typedef string::size_type str_size;
-    string x = "";
-    str_size i = 0, j = 0, size_o = old.size();
+    str_size i = 0, size_o = old.size();
     while (i != s.size()) {
         if (old == s.substr(i, size_o)) {
-            x += s.substr(j, i - j) + new_;
-            j = i + size_o;
+            s.replace(i, size_o, new_);
             i += size_o;
-        } else {
+        } else
             ++i;
-        }
     }
-    x += s.substr(j, s.size() + 1);
-    return x;
+    return s;
 }

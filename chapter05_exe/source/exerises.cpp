@@ -53,3 +53,10 @@ string replace(string &s, const string &old, const string &new_) {
     }
     return s;
 }
+
+string join(const vector<string> &v, const string &s) {
+    string x = v[0];
+    for (vector<string>::const_iterator i = v.begin() + 1; i != v.end(); ++i)
+        x += s + *i;
+    return x;
+}

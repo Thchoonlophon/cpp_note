@@ -8,6 +8,8 @@ using std::cout;    using std::endl;
 int main() {
     string a = "123,,456,,789,,1011";
     cout << replace(a, ",,", "  ") << endl;
+    a.replace(3,2,"  ");
+    cout << a;
 //    string f = ",,";
 //    vector<string> v = split(a, f);
 //    string out = "[";

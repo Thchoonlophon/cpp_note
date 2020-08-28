@@ -53,5 +53,6 @@ string replace(const string &s, const string &old, const string &new_) {
             ++i;
         }
     }
+    x += s.substr(j, s.size() + 1);
     return x;
 }
